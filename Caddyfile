@@ -1,0 +1,9 @@
+https://plex.dev-o-sud.fr {
+	reverse_proxy * http://atlas:32400
+}
+https://atlas.dev-o-sud.fr {
+	reverse_proxy * http://atlas:5000
+}
+https://webdav.dev-o-sud.fr {
+        reverse_proxy * http://atlas:5005
+}
