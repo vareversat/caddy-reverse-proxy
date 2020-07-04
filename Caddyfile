@@ -1,18 +1,18 @@
-https://plex.dev-o-sud.fr {
+plex.dev-o-sud.fr {
 	reverse_proxy * http://atlas:32400
 	log  {
 		output file /var/log/caddy/plex.log
 		level info	
 	}
 }
-https://atlas.dev-o-sud.fr {
+atlas.dev-o-sud.fr {
 	reverse_proxy * http://atlas:5000
         log  {
                 output file /var/log/caddy/atlas.log
                 level info
         }
 }
-https://webdav.dev-o-sud.fr {
+webdav.dev-o-sud.fr {
         reverse_proxy * http://atlas:5005
         log  {
                 output file /var/log/caddy/webdav.log
