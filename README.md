@@ -23,9 +23,9 @@ You need to redirect your incomming trafic to your reverse proxy server via NAT 
 
 ## Step 3 : Configure your Caddyfile
   This Caddyfile provide the following cofiguration :
-  - `https://atlas.dev-o-sud.fr -----> DSM of my Synology NAS` (http://atlas:5000) <br>
-  - `https://plex.dev-o-sud.fr -----> My plex server hosted on my NAS` (http://atlas:32400)<br>
-  - `https://webdav.dev-o-sud.fr -----> Access to my WebDAV service on my NAS` (http://atlas:5005)<br>
+  - `https://atlas.vareversat.fr -----> DSM of my Synology NAS` (http://atlas:5000) <br>
+  - `https://plex.vareversat.fr -----> My plex server hosted on my NAS` (http://atlas:32400)<br>
+  - `https://webdav.vareversat.fr -----> Access to my WebDAV service on my NAS` (http://atlas:5005)<br>
   
   You'll need to change the hostname and the local address with your own and bind your public IP with your domain name
   
