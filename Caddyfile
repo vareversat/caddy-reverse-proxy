@@ -1,21 +1,25 @@
-plex.dev-o-sud.fr {
+# Plex Server
+plex.vareversat.fr {
 	reverse_proxy * http://atlas:32400
 	log  {
 		output file /var/log/caddy/plex.log
-		level info	
+		level debug
 	}
 }
-atlas.dev-o-sud.fr {
+# NAS DSM
+atlas.vareversat.fr {
 	reverse_proxy * http://atlas:5000
         log  {
                 output file /var/log/caddy/atlas.log
                 level info
         }
 }
-webdav.dev-o-sud.fr {
+# WebDAV Server
+webdav.vareversat.fr {
         reverse_proxy * http://atlas:5005
         log  {
                 output file /var/log/caddy/webdav.log
                 level info
         }
 }
+
